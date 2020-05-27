@@ -1,0 +1,23 @@
+#!/bin/bash
+apt-get update
+apt-get install -y apache2
+apt-get install -y ruby wget
+cd /home/ubuntu
+wget https://aws-codedeploy-us-east-1.s3.us-east1.amazonaws.com/latest/install
+chmod +x ./install
+./install auto
+service codedeploy-agent start
+apt-get install -y mysql-server
+apt-get install -y php-mysql
+apt-get install -y php libapache2-mod-php
+systemctl restart apache2
+cd / 
+apt install -y unzip
+cd /var/www/
+wget "https://s3-utility-vincentwijaya.s3.amazonaws.com/simpleEditBioFIx.zip"
+unzip "simpleEditBioFIx.zip"
+wget "https://s3-utility-vincentwijaya.s3.amazonaws.com/dir.conf"
+cp dir.conf /etc/apache2/mods-enabled/dir.conf
+wget "https://s3-utility-vincentwijaya.s3.amazonaws.com/000-default.conf"
+cp 000-default.conf /etc/apache2/sites-available/000-default.conf
+systemctl restart apache2
