@@ -71,7 +71,6 @@ if [ ${PLAT} = "ubuntu" ]; then
 
   if ./install auto; then
     service codedeploy-agent start
-    systemctl restart apache2
     echo "Instalation completed"
       if ! ${AUTOUPDATE}; then
             echo "Disabling Auto Update"
