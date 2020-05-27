@@ -1,14 +1,6 @@
 version: 0.0
 os: linux
-files:
-  - source: /index.php
-    destination: /var/www/bio/
-  - source: /connect.php
-    destination: /var/www/bio/
-  - source: /biodata.php
-    destination: /var/www/bio/
-  - source: /bio.sql
-    destination: /var/www/bio/
+
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
