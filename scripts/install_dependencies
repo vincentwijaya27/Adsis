@@ -7,6 +7,9 @@ apt-get install -y php-mysql
 apt-get install -y php libapache2-mod-php
 systemctl restart apache2
 cd / 
+cd /var/www/
+mkdir "testUbah"
+cd /
 apt install -y unzip
 cd /var/www/
 wget "https://s3-utility-vincentwijaya.s3.amazonaws.com/simpleEditBioFIx.zip"
