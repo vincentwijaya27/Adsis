@@ -95,5 +95,6 @@ if(isset($_POST['submit'])){
 </body>
 <footer>
 	<h5> Change Your Biodata Here</h5>
+	<h5> Change Your Biodata Here</h5>
 </footer>
 </html>
