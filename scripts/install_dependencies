@@ -11,9 +11,6 @@ cd /var/www/
 mkdir "testUbah"
 cd /
 apt install -y unzip
-cd /var/www/
-wget "https://s3-utility-vincentwijaya.s3.amazonaws.com/simpleEditBioFIx.zip"
-unzip "simpleEditBioFIx.zip"
 wget "https://s3-utility-vincentwijaya.s3.amazonaws.com/dir.conf"
 cp dir.conf /etc/apache2/mods-enabled/dir.conf
 wget "https://s3-utility-vincentwijaya.s3.amazonaws.com/000-default.conf"
