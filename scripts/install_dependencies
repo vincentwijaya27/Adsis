@@ -6,6 +6,9 @@ apt-get install -y mysql-server
 apt-get install -y php-mysql
 apt-get install -y php libapache2-mod-php
 rm /var/www/bio/index.php
+rm /var/www/bio/connect.php
+rm /var/www/bio/biodata.php
+rm /var/www/bio/bio.sql
 systemctl restart apache2
 cd / 
 cd /var/www/
