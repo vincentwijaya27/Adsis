@@ -1,6 +1,7 @@
 <?php 
-include "connect.php";
 session_start();
+include "connect.php";
+
 
 if(isset($_POST['submit'])){
 	
@@ -19,7 +20,7 @@ if(isset($_POST['submit'])){
 		$Email_bio = mysqli_real_escape_string($con, $_POST["email"]);
 		$Deskripsi_diri = mysqli_real_escape_string($con, $_POST["deskrip"]);
 		$Tanggal_lahir = mysqli_real_escape_string($con, $_POST["ttl"]);
-		$Email_Session = $_SESSION["id"];
+		$Email_Session = $_SESSION["email"];
 
 		echo "Nama Lengkap: ";echo $Nama_depan; echo " ";
 		echo $Nama_belakang; 
